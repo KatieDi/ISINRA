@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+        <link rel="shortcut icon" href="assets/images/flavicon_1.ico">
+
+        <title>ISINRA - planificare SMSI</title>
+        
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+    </head>
+
+
+    <body class="fixed-left">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <div class="text-center">
+                       
+                     <a href="index.html" class="logo">
+                            <i class="icon-c-logo"> <img src="assets/images/logo_sm.png" height="42"/> </i>
+                            <span><img src="assets/images/logo_light.png" height="20"/></span>
+                        </a>                
+                    </div>
+                </div>
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="">
+                           <div class="pull-left">
+                                <button class="button-menu-mobile open-left waves-effect waves-light">
+                                    <i class="md md-menu"></i>
+                                </button>
+                                <span class="clearfix"></span>
+                            </div>                                  
+
+                            <ul class="nav navbar-nav navbar-right pull-right">
+                                                               
+                                <li class="hidden-xs">
+                                    <a href="#" id="btn-fullscreen" class="waves-effect waves-light"><i class="icon-size-fullscreen"></i></a>
+                                </li>
+                                
+                                <li class="dropdown top-menu-item-xs">
+                                    <a href="" class="dropdown-toggle profile waves-effect waves-light" data-toggle="dropdown" aria-expanded="true"><img src="assets/images/users/avatar.png" alt="user-img" > </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)"><i class="ti-user m-r-10 text-custom"></i> Profile</a></li>
+                                        <li><a href="javascript:void(0)"><i class="ti-settings m-r-10 text-custom"></i> Settings</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)"><i class="ti-power-off m-r-10 text-danger"></i> Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+
+            <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+                    <!--- Divider -->
+                    <div id="sidebar-menu">
+                        <ul>     
+                            <!-- ========== Diagnosticarea ========== -->
+                   	        <li class="has_sub">
+                                <a href="index.html" class="waves-effect"><i class=" ti-receipt"></i> <span> Analiza neconformități </span> </a>
+                             </li>
+                            <!-- ========== Iventariere========== -->
+                            <li class="has_sub">
+                                <a href="inventory.html" class="waves-effect"> <i class="ti-archive"></i><span> Inventariere </span> </a>
+                             </li>
+                            <!-- ========== Evaluare risk ========== -->
+                            <li class="has_sub">
+                                <a href="evaluation-risk.html" class="waves-effect"><i class="ti-target"></i> <span> Analiza riscurilor </span> </a>
+                             </li>
+                             <!-- ========== Plan de tratare ========== -->
+                            <li class="has_sub">
+                                <a href="risk-treatment.html" class="waves-effect"><i class="ti-pencil-alt"></i> <span> Plan tratare riscuri </span> </a>
+                             </li>
+                               <!-- ========== Organizatia ========== -->
+                            <li class="has_sub">
+                                <a href="organization.html" class="waves-effect"><i class="ti-id-badge"></i> <span> Contextul organizatiei </span> </a>
+                             </li>
+                            <!-- ========== Resurse utile ========== -->
+                            <li class="has_sub">
+                                <a href="resources.html" class="waves-effect"><i class="ti-package"></i> <span> Resurse utile</span> </a>
+                             </li>
+
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container">
+
+                        <!-- Page-Title -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="btn-list form-group pull-right m-t-20">
+                                 
+                                  <button type="button" class="btn btn-default waves-effect waves-light" data-toggle="modal" data-target="#tabs-modal">Ghid completare</button>
+                                                                                                       
+                                </div>
+
+                                <h4 class="page-title">Inventarierea</h4>
+                                <p class="text-muted page-title-alt">Inventarierea resurselor și proceselor din cadrul organizației.</p>
+                            </div>
+                        </div>
+
+              <!-- Modals Ghid Completare button -->
+               <div id="tabs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content p-0">
+                                                <ul class="nav nav-tabs navtab-bg nav-justified">
+                                                    <li class="active">
+                                                        <a href="#info" data-toggle="tab" aria-expanded="true"> 
+                                                            <span class="visible-xs"></span> 
+                                                            <span class="hidden-xs">General</span> 
+                                                        </a> 
+                                                    </li> 
+                                                    <li class=""> 
+                                                        <a href="#field" data-toggle="tab" aria-expanded="false"> 
+                                                            <span class="visible-xs"></span> 
+                                                            <span class="hidden-xs">Legenda tabel</span> 
+                                                        </a> 
+                                                    </li> 
+                                                                                                      
+                                                </ul> 
+                                                <div class="tab-content"> 
+                                                    <div class="tab-pane active" id="info"> 
+                                                        <div> 
+                                                            <p>În acest modul se identifică toate resursele informaționale ce corespund scopului SMSI.
+                                                             </p> 
+                                                            <p>Pentru fiecare resursă informațională se stabilește un deținător care va avea responsabilitatea primară pentru securitatea resursei informaționale și un gestionar care va asigura cerințele stabilite de către deținător.</p> 
+                                                            <p>Se analizează impactul resursei informaționale asupra activității de afacere a organizație utilizându-se criterii de sensibilitate(confidentialitate, disponibilitate, integritate, non-repudiere).</p> 
+                                                            
+                                                        </div> 
+                                                    </div> 
+                                                  <div class="tab-pane" id="field">                      
+                                                         <div> 
+                                                            <p><strong>ID </strong>– Identificatorul resursei informaționale.
+                                                             </p> 
+                                                             <p><strong>Categorie RI </strong>– Simbolizează categoria resursei informaționale. Un exemplu de claseficare pe categori poate fi:
+                                                              <ul>
+                                                                  <li>SIN – sistem informatic; </li>
+                                                                  <li>SRT – serviciu comun în rețea;</li>
+                                                                  <li>INF – sistem de infrastructură TI; </li>
+                                                                  <li>PR – proiect; </li>
+                                                                  <li>PRC – proces;  </li>
+                                                                </ul>
+                                                             </p>
+                                                            <p><strong>Denumire RI  </strong>– Denumirea resursei informaționale propriu zise.
+                                                             </p>
+                                                            <p><strong>Deținător RI </strong>– Gestionarul resurse informaționale;
+                                                            <p><strong>Descrierea RI </strong>– Descrierea aspectelor importante ce caracterizează de resursa informațională.
+                                                            <p><strong>Clasă RI  </strong>– Reprezintă impactul asupra afacerii prin prisma criteriilor de sensibilitate(confidentialitate, disponibilitate, integritate, non-repudiere). Fiecare criteriu se apreciază după o scală de la 1-4, unde 4 reprezintă importanță extremă pentru afacere. Categoria resursei  poate luat valori între 1 și 16 în dependență de tipul resursei și importanța asupra afacerii a criteriilor de sensibilitate.
+                                                           <table class="table table-striped m-0">
+                                                          <thead>
+                                                            <tr>
+                                                              <th style="text-align: center">Clasă Resursă</th>
+                                                              <th style="text-align: center">Valoare(Cofidențialitate+Integritate+Disponibilitate+Non-repudiere)</th>
+                                                            </tr>         
+                                                          </thead>
+                                                          <tbody>
+                                                            <tr>
+                                                              <td style="text-align: center">Critic</td>
+                                                              <td style="text-align: center">12-16 </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td style="text-align: center">Înalt</td>
+                                                              <td style="text-align: center">10-12</td>
+                                                             </tr>
+                                                             <tr>
+                                                                <td style="text-align: center">Mediu</td>
+                                                                <td style="text-align: center">7-9 </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td style="text-align: center">Jos</td>
+                                                                <td style="text-align: center">4-6</td>
+                                                              </tr>
+                                                             </tbody>
+                                                        </table>
+                                                      </p>
+                                                      </div> 
+                                                                                                                  
+                                                     </div>                                                        
+                                                      </div>
+                                                    
+                                                   </div><!-- /.modal-content -->
+                                        </div><!-- /.modal-dialog -->
+                                    </div><!-- /.modal -->
+
+              <!-- END Modals Ghid Completare button -->
+
+      <!--   Begining Card Box     -->
+     <div class="row"> 
+        <div class="col-ms-12"> 
+            <div class="card-box table-responsive ">
+                         <table id="datatable-buttons" class="table table-striped table-bordered p-t-10 ">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Categoria RI</th>
+                                    <th>Denumirea RI</th>
+                                    <th>Deținător RI</th>
+                                    <th>Descrierea RI</th>
+                                    <th>Clasă Resursă</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+
+                                <tr>
+                                    <td>01</td>
+                                    <td>SIN</td>
+                                    <td>Libra</td>
+                                    <td>Departamentul vânzări</td>
+                                    <td>Efectuează  cântarile necesare a produselor </td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>02</td>
+                                    <td>SIN</td>
+                                    <td>Universal Accounting</td>
+                                    <td>Departamentul economic</td>
+                                    <td>soft pentru contabilitate, taxe</td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td>SIN</td>
+                                    <td>1C Enterprise</td>
+                                    <td>Sectia Contabilitate</td>
+                                    <td>Evidenta contabila</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td>SIN</td>
+                                    <td>Farda</td>
+                                    <td>Departamentul Business</td>
+                                    <td>ef</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>05</td>
+                                    <td>INF</td>
+                                    <td>Cal1</td>
+                                    <td>Departamentul TI</td>
+                                    <td>xx</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>06</td>
+                                    <td>INF</td>
+                                    <td>New York</td>
+                                    <td>Departamentul TI</td>
+                                    <td>2x</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>07</td>
+                                    <td>INF</td>
+                                    <td>Mikrotik 1</td>
+                                    <td>Departamntul TI</td>
+                                    <td> retele</td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>08</td>
+                                    <td>INF</td>
+                                    <td>Mikrotik 2</td>
+                                    <td>Departamntul TI</td>
+                                    <td>k</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>09</td>
+                                    <td>INF</td>
+                                    <td>Router</td>
+                                    <td>Departamentul TI</td>
+                                    <td>f</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>PRC</td>
+                                    <td>Cântărirea produselor</td>
+                                    <td>Departamentul producere</td>
+                                    <td>cântarira</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>PRC</td>
+                                    <td>London</td>
+                                    <td>30</td>
+                                    <td>2008/12/19</td>
+                                    <td>$90,560</td>
+                                </tr>
+                                <tr>
+                                    <td>Quinn Flynn</td>
+                                    <td>Support Lead</td>
+                                    <td>Edinburgh</td>
+                                    <td>22</td>
+                                    <td>2013/03/03</td>
+                                    <td>$342,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Charde Marshall</td>
+                                    <td>Regional Director</td>
+                                    <td>San Francisco</td>
+                                    <td>36</td>
+                                    <td>2008/10/16</td>
+                                    <td>$470,600</td>
+                                </tr>
+                              
+                                </tbody>
+                            </table>
+                                 
+                    </div>
+                </div> 
+            </div>               
+                   
+            </div>
+
+            </div>
+                        <!-- end row -->
+
+           </div> <!-- container -->
+                               
+  
+
+     <footer class="footer text-right">
+                    © 2017. All rights reserved.
+      </footer>
+
+           
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+     </div> <!-- wrapper-->
+                
+
+
+        <script>
+            var resizefunc = [];
+        </script>
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+
+        <script src="assets/plugins/morris/morris.min.js"></script>
+        <script src="assets/plugins/raphael/raphael-min.js"></script>
+
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+        
+        <!-- data table -->
+   
+        <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.bootstrap.js"></script>
+
+        <script src="assets/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="assets/plugins/datatables/buttons.bootstrap.min.js"></script>
+        <script src="assets/plugins/datatables/jszip.min.js"></script>
+        <script src="assets/plugins/datatables/pdfmake.min.js"></script>
+        <script src="assets/plugins/datatables/vfs_fonts.js"></script>
+        <script src="assets/plugins/datatables/buttons.html5.min.js"></script>
+        <script src="assets/plugins/datatables/buttons.print.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.fixedHeader.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.keyTable.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="assets/plugins/datatables/responsive.bootstrap.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.scroller.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.colVis.js"></script>
+        <script src="assets/plugins/datatables/dataTables.fixedColumns.min.js"></script>
+
+        <script src="assets/pages/datatables.init.js"></script>
+
+        <script type="text/javascript">
+      
+            TableManageButtons.init();
+
+        </script>>
+
+
+
+
+    </body>
+</html>

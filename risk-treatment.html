@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+        <link rel="shortcut icon" href="assets/images/flavicon_1.ico">
+
+        <title>ISINRA - planificare SMSI</title>
+        
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+    </head>
+
+
+    <body class="fixed-left">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <div class="text-center">
+                       
+                     <a href="index.html" class="logo">
+                            <i class="icon-c-logo"> <img src="assets/images/logo_sm.png" height="42"/> </i>
+                            <span><img src="assets/images/logo_light.png" height="20"/></span>
+                        </a>                
+                    </div>
+                </div>
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="">
+                           <div class="pull-left">
+                                <button class="button-menu-mobile open-left waves-effect waves-light">
+                                    <i class="md md-menu"></i>
+                                </button>
+                                <span class="clearfix"></span>
+                            </div>                                  
+
+                            <ul class="nav navbar-nav navbar-right pull-right">
+                                                               
+                                <li class="hidden-xs">
+                                    <a href="#" id="btn-fullscreen" class="waves-effect waves-light"><i class="icon-size-fullscreen"></i></a>
+                                </li>
+                                
+                                <li class="dropdown top-menu-item-xs">
+                                    <a href="" class="dropdown-toggle profile waves-effect waves-light" data-toggle="dropdown" aria-expanded="true"><img src="assets/images/users/avatar.png" alt="user-img"> </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)"><i class="ti-user m-r-10 text-custom"></i> Profile</a></li>
+                                        <li><a href="javascript:void(0)"><i class="ti-settings m-r-10 text-custom"></i> Settings</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)"><i class="ti-power-off m-r-10 text-danger"></i> Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+
+            <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+                    <!--- Divider -->
+                    <div id="sidebar-menu">
+                        <ul>     
+                            <!-- ========== Diagnosticarea ========== -->
+                   	        <li class="has_sub">
+                                <a href="index.html" class="waves-effect"><i class=" ti-receipt"></i> <span> Analiza neconformități </span> </a>
+                             </li>
+                            <!-- ========== Iventariere========== -->
+                            <li class="has_sub">
+                                <a href="inventory.html" class="waves-effect"> <i class="ti-archive"></i><span> Inventariere </span> </a>
+                             </li>
+                            <!-- ========== Analiză risk ========== -->
+                            <li class="has_sub">
+                                <a href="evaluation-risk.html" class="waves-effect"><i class="ti-target"></i> <span> Analiza riscurilor </span> </a>
+                             </li>
+                             <!-- ========== Plan de tratare ========== -->
+                            <li class="has_sub">
+                                <a href="risk-treatment.html" class="waves-effect"><i class="ti-pencil-alt"></i> <span> Plan tratare riscuri </span> </a>
+                             </li>
+                               <!-- ========== Organizatia ========== -->
+                            <li class="has_sub">
+                                <a href="organization.html" class="waves-effect"><i class="ti-id-badge"></i> <span> Contextul organizatiei </span> </a>
+                             </li>
+                          <!-- ========== Resurse utile ========== -->
+                            <li class="has_sub">
+                                <a href="resources.html" class="waves-effect"><i class="ti-package"></i> <span> Resurse utile</span> </a>
+                             </li>
+
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container">
+
+                        <!-- Page-Title -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="btn-list form-group pull-right m-t-20">
+                                 
+                                  <button type="button" class="btn btn-default waves-effect waves-light" data-toggle="modal" data-target="#tabs-modal">Ghid completare</button>
+                                                                                                                                      
+                                </div>
+
+                                <h4 class="page-title">Plan tratare riscuri</h4>
+                                <p class="text-muted page-title-alt">Plan tratare riscuri</p>
+                            </div>
+                        </div>
+                       <!-- Modals Ghid Completare button -->
+               <div id="tabs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content p-0">
+                                                <ul class="nav nav-tabs navtab-bg nav-justified">
+                                                    <li class="active">
+                                                        <a href="#info" data-toggle="tab" aria-expanded="true"> 
+                                                            <span class="visible-xs"></span> 
+                                                            <span class="hidden-xs">General</span> 
+                                                        </a> 
+                                                    </li> 
+                                                    <li class=""> 
+                                                        <a href="#field" data-toggle="tab" aria-expanded="false"> 
+                                                            <span class="visible-xs"></span> 
+                                                            <span class="hidden-xs">Legenda tabel</span> 
+                                                        </a> 
+                                                    </li> 
+                                                                                                      
+                                                </ul> 
+                                                <div class="tab-content"> 
+                                                    <div class="tab-pane active" id="info"> 
+                                                        <div> 
+                                                            <p>În acest modul se identifică toate resursele informaționale ce corespund scopului SMSI.
+                                                             </p> 
+                                                            <p>Pentru fiecare resursă informațională se stabilește un deținător care va avea responsabilitatea primară pentru securitatea resursei informaționale și un gestionar care va asigura cerințele stabilite de către deținător.</p> 
+                                                            <p>Se analizează impactul resursei informaționale asupra activității de afacere a organizație utilizându-se criterii de sensibilitate(confidentialitate, disponibilitate, integritate, non-repudiere).</p> 
+                                                            
+                                                        </div> 
+                                                    </div> 
+                                                  <div class="tab-pane" id="field">                      
+                                                         <div> 
+                                                            <p><strong>ID </strong>– Identificatorul înregistrării
+                                                             </p> 
+                                                             <p><strong>Riscul inerent </strong>– Se va descrie riscul inerent pentru resursa vizată. </p>
+                                                            <p><strong>Denumire RI  </strong>– Denumirea resursei informaționale propriu zise, afectate.
+                                                             </p>
+                                                            <p><strong>Măsuri de securitate implimentate</strong>– Listă măsurilor de securitate existente, care tratează riscurile reziduale identificate;</p>
+                                                             <p><strong>Riscul rezidual</strong>– Riscul rezidual ce nu este acoperit de măsurile de securitate implementate;</p>
+                                                            <p><strong>Nivel de risc rezidual </strong>– nivelul riscului calculat după probabilitate și impact, luând în calcul măsurile de securitate implementate, scala de la 1-4, unde 4 reprezintă nivel critic.</p>
+                                                            <p><strong>Măsuri de securitate propuse spre implementare </strong>–  măsuri de securitate propuse pentru tratarea riscului rezidual. </p>                                                                      
+                                                      </div> 
+                                                                                                                  
+                                                     </div>                                                        
+                                                      </div>
+                                                    
+                                                   </div><!-- /.modal-content -->
+                                        </div><!-- /.modal-dialog -->
+                                    </div><!-- /.modal -->
+
+              <!-- END Modals Ghid Completare button -->
+
+    
+      <!--   Begining Card Box     -->
+     <div class="row"> 
+        <div class="col-ms-12"> 
+            <div class="card-box table-responsive ">
+                         <table id="datatable-buttons" class="table table-striped table-bordered p-t-10 ">
+                                <thead>
+                                <tr>
+                                    <th style="text-align: center">ID</th>
+                                    <th style="text-align: center">Riscul inerent</th>
+                                    <th style="text-align: center" >Denumire RI</th>
+                                    <th style="text-align: center">Masuri de securitate implimentate</th>
+                                    <th style="text-align: center" >Riscul rezidual</th>
+                                     <th style="text-align: center" >Nivelul riscului rezidual</th>
+                                    <th style="text-align: center"> Măsuri de securitate propuse spre implementare </th>
+
+
+                                </tr>
+                                </thead>
+
+                                <tbody>
+
+                                <tr>
+                                    <td>101</td>
+                                    <td>Acces neautorizat</td>
+                                    <td>calculator</td>
+                                    <td>calculatorul este pastrat intr-o incapiere care mereu se închuie</td>
+                                    <td>12</td>
+                                    <td>5</td>
+                                   <td>Cont de utilizator cu parola</td>
+
+                    
+                            </table>
+                                 
+                    </div>
+                </div> 
+            </div>               
+                   
+            </div>
+
+            </div>
+                        <!-- end row -->
+
+           </div> <!-- container -->
+                               
+    
+
+     <footer class="footer text-right">
+                    © 2017. All rights reserved.
+      </footer>
+
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+            
+
+        </div>
+        <!-- END wrapper -->
+
+
+
+        <script>
+            var resizefunc = [];
+        </script>
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+
+        <script src="assets/plugins/morris/morris.min.js"></script>
+        <script src="assets/plugins/raphael/raphael-min.js"></script>
+
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+        
+        <!-- data table -->
+   
+        <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.bootstrap.js"></script>
+
+        <script src="assets/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="assets/plugins/datatables/buttons.bootstrap.min.js"></script>
+        <script src="assets/plugins/datatables/jszip.min.js"></script>
+        <script src="assets/plugins/datatables/pdfmake.min.js"></script>
+        <script src="assets/plugins/datatables/vfs_fonts.js"></script>
+        <script src="assets/plugins/datatables/buttons.html5.min.js"></script>
+        <script src="assets/plugins/datatables/buttons.print.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.fixedHeader.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.keyTable.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="assets/plugins/datatables/responsive.bootstrap.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.scroller.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.colVis.js"></script>
+        <script src="assets/plugins/datatables/dataTables.fixedColumns.min.js"></script>
+
+        <script src="assets/pages/datatables.init.js"></script>
+
+
+        <script type="text/javascript">
+      
+            TableManageButtons.init();
+
+        </script>>
+
+
+
+
+    </body>
+</html>

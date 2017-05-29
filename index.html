@@ -1,0 +1,2062 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+        <link rel="shortcut icon" href="assets/images/flavicon_1.ico">
+
+        <title>ISINRA - planificare SMSI</title>
+        
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+    </head>
+
+
+    <body class="fixed-left">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <div class="text-center">
+                       
+                     <a href="index.html" class="logo">
+                            <i class="icon-c-logo"> <img src="assets/images/logo_sm.png" height="42"/> </i>
+                            <span><img src="assets/images/logo_light.png" height="20"/></span>
+                        </a>                
+                    </div>
+                </div>
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="">
+                           <div class="pull-left">
+                                <button class="button-menu-mobile open-left waves-effect waves-light">
+                                    <i class="md md-menu"></i>
+                                </button>
+                                <span class="clearfix"></span>
+                            </div>                                  
+
+                            <ul class="nav navbar-nav navbar-right pull-right">
+                                                               
+                                <li class="hidden-xs">
+                                    <a href="#" id="btn-fullscreen" class="waves-effect waves-light"><i class="icon-size-fullscreen"></i></a>
+                                </li>
+                                
+                                <li class="dropdown top-menu-item-xs">
+                                    <a href="" class="dropdown-toggle profile waves-effect waves-light" data-toggle="dropdown" aria-expanded="true"><img src="assets/images/users/avatar.png" alt="user-img"> </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)"><i class="ti-user m-r-10 text-custom"></i> Profile</a></li>
+                                        <li><a href="javascript:void(0)"><i class="ti-settings m-r-10 text-custom"></i> Settings</a></li>
+                                       <li class="divider"></li>
+                                        <li><a href="javascript:void(0)"><i class="ti-power-off m-r-10 text-danger"></i> Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+
+            <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+                    <!--- Divider -->
+                    <div id="sidebar-menu">
+                        <ul>     
+                            <!-- ========== Diagnosticarea ========== -->
+                   	        <li class="has_sub">
+                                <a href="index.html" class="waves-effect"><i class=" ti-receipt"></i> <span> Analiza neconformități </span> </a>
+                             </li>
+                            <!-- ========== Iventariere========== -->
+                            <li class="has_sub">
+                                <a href="inventory.html" class="waves-effect"> <i class="ti-archive"></i><span> Inventariere </span> </a>
+                             </li>
+                            <!-- ========== Analiza risk ========== -->
+                            <li class="has_sub">
+                                <a href="evaluation-risk.html" class="waves-effect"><i class="ti-target"></i> <span> Analiza riscurilor </span> </a>
+                             </li>
+                             <!-- ========== Plan de tratare ========== -->
+                            <li class="has_sub">
+                                <a href="risk-treatment.html" class="waves-effect"><i class="ti-pencil-alt"></i> <span> Plan tratare riscuri </span> </a>
+                             </li>
+                               <!-- ========== Organizatia ========== -->
+                            <li class="has_sub">
+                                <a href="organization.html" class="waves-effect"><i class="ti-id-badge"></i> <span> Contextul organizatiei </span> </a>
+                             </li>
+                            <!-- ========== Resurse utile ========== -->
+                            <li class="has_sub">
+                                <a href="resources.html" class="waves-effect"><i class="ti-package"></i> <span> Resurse utile</span> </a>
+                             </li>
+
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container">
+
+                        <!-- Page-Title -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="btn-list form-group pull-right m-t-20">
+                                 
+                                  <button type="button" class="btn btn-default waves-effect waves-light" data-toggle="modal" data-target="#tabs-modal">Ghid completare</button>
+
+                                  <a href="anexaA_raport.html" 
+                                  <button type="button" class="btn btn-default waves-effect waves-light">Raport neconformitate</button> </a>
+                                                                      
+                                </div>
+
+                                <h4 class="page-title">Analiza neconformităților</h4>
+                                <p class="text-muted page-title-alt">Evaluare nivel de comformare conform standartului ISO-27001:2013</p>
+                            </div>
+                        </div>
+
+              <!-- Modals Ghid Completare button -->
+               <div id="tabs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content p-0">
+                                                <ul class="nav nav-tabs navtab-bg nav-justified">
+                                                    <li class="">
+                                                        <a href="#info" data-toggle="tab" aria-expanded="false"> 
+                                                            <span class="visible-xs"></span> 
+                                                            <span class="hidden-xs">General</span> 
+                                                        </a> 
+                                                    </li> 
+                                                    <li class=""> 
+                                                        <a href="#field" data-toggle="tab" aria-expanded="false"> 
+                                                            <span class="visible-xs"></span> 
+                                                            <span class="hidden-xs">Termenii</span> 
+                                                        </a> 
+                                                    </li> 
+                                                    <li class="active"> 
+                                                        <a href="#cobit" data-toggle="tab" aria-expanded="true"> 
+                                                            <span class="visible-xs"></span> 
+                                                            <span class="hidden-xs">Nivel de maturitatea</span> 
+                                                        </a> 
+                                                    </li>                                                   
+                                                </ul> 
+                                                <div class="tab-content"> 
+                                                    <div class="tab-pane" id="info"> 
+                                                        <div> 
+                                                            <p>În acest modul se evaluează nivelul de conformare conform Anexa A a standartului ISO 27001:2013. </p> 
+                                                            <p>Se completează câmpurile Anexei A cu rezultatele evaluării per fiecare control.</p> 
+                                                            <p>După finisarea completării apăsând butonul GENERARE RAPORT se generează un raport unde este prezentată analiza neconformităților după domenii, subdomenii și harta de conformare </p> 
+                                                            
+                                                        </div> 
+                                                    </div> 
+                                                    <div class="tab-pane" id="field">                                                  
+                                                        <div class="p-0">
+                                                        <table class="table table-striped m-0">
+                                                          <thead>
+                                                            <tr>
+                                                              <th style="text-align: center">Denumire</th>
+                                                              <th style="text-align: center">Descriere</th>
+                                                            </tr>         
+                                                          </thead>
+                                                          <tbody>
+                                                            <tr>
+                                                              <td>Obiectiv</td>
+                                                              <td>În baza obiectivului de securitate vor fi identificate măsurile de securitate (tehnice, non-tehnice) aplicabile organizației.</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>Mijloc de control</td>
+                                                              <td>Reprezintă niște măsurii de securiate necesare a fi implimetate.</td>
+                                                             </tr>
+                                                             <tr>
+                                                              <td>Nivel de maturitate</td>
+                                                              <td>Modelarea maturității conform COBIT 4. Modelul oferă evaluarea maturității de la nivel inexistent (0) la optimizat (5). </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>Descrierea implimentării controlului</td>
+                                                                <td>Toate documentele care descriu controlul, sau o descrierea generală a controlului daca nu există acte normative care il reglementează</td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>Responsabil de control</td>
+                                                                <td>Persoană responsabilă de implimentarea controlului, sau persoană relevantă cu care se poate de discutat despre acest control control </td>
+                                                              </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </div>
+                                                    </div> 
+
+                                                    <div class="tab-pane active" id="cobit">
+                                                           <div class="p-0">
+                                                        <table class="table table-striped m-0">
+                                                          <thead>
+                                                            <tr>
+                                                              <th style="text-align: center">Nivel</th>
+                                                              <th style="text-align: center">Descriere</th>
+                                                            </tr>         
+                                                          </thead>
+                                                          <tbody>
+                                                            <tr>
+                                                              <td>5.Optimizat</td>
+                                                              <td>Măsurile de securitate a fost ajustate la cel mai bun nivel posibil și baza pe rezultatelor îmbunătățirii continuu iar nivelul de maturitate este ridicat și oferă o bună integrare cu alte măsuri de securitate. IT este utilizat în mod integrat pentru automatizarea fluxul de lucru oferind instrumente pentru îmbunătățirea calității și eficienții și care face adaptarea facilă a organizației.</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>4.Gestionat şi măsurabil</td>
+                                                              <td>Gestionat și măsurabil – Conducerea monitorizează și măsoară conformarea cu procedurile și iau acțiuni în cazul când măsurile de securitate nu funcționează eficient. Măsurile de securitate se află într-o îmbunătățire continua și utilizează cele mai bune practici. Automatizarea și instrumente sunt utilizate limitat sau utilizate fragmentat.</td>
+                                                             </tr>
+                                                             <tr>
+                                                                <td>3.Documentat</td>
+                                                                <td>Procedurile au fost standardizate, documentate și comunicate prin instruire. Există cerințe ca ele trebuie urmate dar probabilitatea identificării abaterilor de la procese este minima.  Procedurile nu sunt sofisticate și reprezintă formalizarea practicilor curente. </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>2.Minim</td>
+                                                                <td>Măsurile de securitate  în linii mari sunt executate la fel de diferite persoane. Nu există instruire formală sau comunicare a procedurilor standard și responsabilitățile nu sunt clar definite. Există un grad ridicat de încredere în cunoștințele persoanelor și există posibilitatea apariției erorilor.</td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>1.Initial</td>
+                                                                <td>Există dovezi ca compania percepe riscurile existente și ele sunt necesar de a fi abordate. Nu exista măsuri standarde implementate și abordările pot fi diferite la o persoana sau de la caz la caz. În linii mari gestiunea abordării este dezorganizată.</td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>0.Inexistent</td>
+                                                                <td>Lipsa totală a măsurilor de securitate implementate iar compania nu conștientizează că există o problemă care necesită o abordare.</td>
+                                                              </tr>
+                                                                <tr>
+                                                                <td>-1.Nu este aplicabil</td>
+                                                                <td>Controlul dat nu este relevant pentru companie. Fiecare control decizia caruia va fi necesar de a fi implementat va fi justificat. Justificarea va documentată în referință</td>
+                                                              </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </div>
+
+                                                    </div>                                                     
+                                                </div> 
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal-dialog -->
+                                    </div><!-- /.modal -->
+
+              <!-- END Modals Ghid Completare button -->
+
+      <!--   Begining Anexa A     -->
+            <div class="row">
+              <div class="col-ms-12">
+                <div class="card-box p-t-10">
+                  <!-- 1 Politica  -->
+                    <div class="portlet ">
+                        <div class="portlet-heading bg-custom ">
+                            <h3 class="portlet-title ">
+                                1. Politica de securitate
+                            </h3>
+                            <div class="portlet-widgets">
+                               <a data-toggle="collapse" data-parent="#accordion1" href="#bg-default"><i class="ion-minus-round"></i></a>
+                              
+                            </div>
+                            <div class="clearfix"></div>
+                         </div>
+                        <div id="bg-default" class="panel-collapse collapse in">
+                            <div class="portlet-body bg-muted">
+                               <p class="font-bold ">  1.1 Direcţia managerială pentru securitatea informaţiei</p>
+                               <p><em>Obiectiv: Să asigure orientarea generală de către management şi sprijinul pentru securitatea informaţiei în conformitate cu cerinţele afacerii, legislaţia şi reglementările aplicabile.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1.1.1 Politici de securitate a informației.</td>
+                                    <td>Un set de politici de securitate a informaţiei trebuie să fie definit, aprobat de către management, publicat şi comunicat tuturor angajaţilor şi terţelor părţi relevante.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                    <tr>
+                                    <td>1.1.2 Revizuirea politicii de securitate a informaţiei</td>
+                                    <td>Politicile de securitate a informaţiei trebuie să fie revizuite la intervale planificate sau atunci când apar schimbări semnificative, pentru a se asigura permanenta lor decvare, compatibilitate şi eficienţă.</td>
+                                    <td><a href="#" id="cobitselect1" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation1" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible1" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End 1 Politica  -->
+
+                    <!-- 2 Organizarea securității informației  -->
+                    <div class="portlet ">
+                        <div class="portlet-heading bg-custom bg-2">
+                            <h3 class="portlet-title ">
+                                2. Organizarea securităţii informaţiei
+                            </h3>
+                            <div class="portlet-widgets">
+                               <a data-toggle="collapse" data-parent="#accordion1" href="#bg-2"><i class="ion-minus-round"></i></a>
+                              
+                            </div>
+                            <div class="clearfix"></div>
+                         </div>
+                        <div id="bg-2" class="panel-collapse collapse in">
+                            <div class="portlet-body bg-muted">
+                               <p class="font-bold ">  2.1 Organizarea internă</p>
+                               <p><em>Obiectiv: Să stabilească un cadru de management, pentru a iniţia şi controla implementarea şi funcţionarea securităţii informaţiei în organizaţie.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>2.1.1 Roluri şi responsabilităţi privind securitatea informaţiei</td>
+                                    <td>Trebuie definite şi atribuite toate responsabilităţile privind
+securitatea informaţiei.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                    <tr>
+                                    <td>2.1.2 Separarea sarcinilor</td>
+                                    <td>Sarcinile şi domeniile de responsabilitate aflate în conflict trebuie să fie separate pentru a reduce posibilitatea modificării neautorizate sau neintenţionate sau utilizarea greşită a resurselor organizaţiei.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  </tr>
+                                    <tr>
+                                    <td>2.1.3 Contactul cu autorităţile </td>
+                                    <td>Trebuie menţinute contacte corespunzătoare cu autorităţile relevante.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  </tr>
+                                    <tr>
+                                    <td>2.1.4 Contactul cu grupuri speciale de interese</td>
+                                    <td>Trebuie menţinute contacte corespunzătoare cu grupuri speciale de interese sau alte forumuri specializate şi asociaţii profesionale în domeniul securităţii.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                   </tr>
+                                    <tr>
+                                    <td>2.1.5 Securitatea informaţiei în managementul proiectelor</td>
+                                    <td>Securitatea informaţiei trebuie să fie luată în considerare în managementul proiectelor, indiferent de tipul proiectului.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            
+                            <!-- 2.2-->
+                               <p class="font-bold ">  2.2 Dispozitive mobile şi lucrul la distanţă</p>
+                               <p><em>Obiectiv: Să asigure securitatea lucrului la distanţă şi a utilizării dispozitivelor mobile.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>2.2.1 Politică referitoare la dispozitivele mobile</td>
+                                    <td>Trebuie adoptată o politică şi măsurile de securitate aferente pentru managementul riscului generat prin utilizarea dispozitivelor mobile.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                    <tr>
+                                    <td>2.2.2 Lucru la distanţă</td>
+                                    <td>Trebuie adoptată o politică şi măsurile de securitate aferente pentru a proteja informaţia accesată, prelucrată şi stocată în locaţii de lucru la distanţă.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            </div>
+                            <!-- END2.2-->
+                        </div> <!--end colappse in -->
+                    </div>
+                  <!-- End 2Organizarea securitatii informationale -->
+
+                    <!-- 3. Securitatea resurselor umane -->
+                    <div class="portlet ">
+                        <div class="portlet-heading bg-custom bg-2">
+                            <h3 class="portlet-title ">
+                                3. Securitatea resurselor umane
+                            </h3>
+                            <div class="portlet-widgets">
+                               <a data-toggle="collapse" data-parent="#accordion1" href="#bg-3"><i class="ion-minus-round"></i></a>
+                              
+                            </div>
+                            <div class="clearfix"></div>
+                         </div>
+                        <div id="bg-3" class="panel-collapse collapse in">
+                            <div class="portlet-body bg-muted">
+                               <p class="font-bold ">3.1 Înaintea angajării</p>
+                               <p><em>Obiectiv: Să se asigure că angajaţii şi contractanţii înţeleg responsabilităţile care le revin şi sunt corespunzători.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>3.1.1 Verificare</td>
+                                    <td>Pentru toţi candidaţii pentru angajare trebuie să se efectueze verificări de fond în conformitate cu legile aplicabile, cu reglementările şi cu regulile de etică; aceste verificări trebuie să fie proporţionale cu cerinţele afacerii, cu clasificarea informaţiei la care urmează să aibă acces şi cu riscurile percepute.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                    <tr>
+                                    <td>3.1.2 Cerinţe şi condiţii de angajare</td>
+                                    <td>Acordurile contractuale cu angajaţii şi contractanţii trebuie să precizeze responsabilităţile lor şi ale organizaţiei pentru securitatea informaţiei.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            
+                            <!-- 3.2-->
+                               <p class="font-bold ">3.2 În timpul perioadei de angajare</p>
+                               <p><em>Obiectiv: Să se asigure faptul că toţi angajaţii şi contractanţii sunt conştienţi de responsabilităţile lor referitoare la securitatea informaţiei şi le îndeplinesc.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>3.2.1 Responsabilităţile managementului</td>
+                                    <td>Managementul trebuie să ceară angajaţilor să aplice regulile de securitate a informaţiei, în conformitate cu politicile şi procedurile stabilite de organizaţie.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                    <tr>
+                                    <td>3.2.2 Conştientizare, educaţie şi instruire referitoare la securitatea informaţiei.</td>
+                                    <td>Toţi angajaţii organizaţiei şi, acolo unde este relevant, contractanţii trebuie să primească educaţie de conştientizare şi instruire corespunzătoare, precum şi informări regulate în ceea ce priveşte actualizarea politicilor şi procedurilor organizaţionale, relevante pentru funcţia lor.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                     <tr>
+                                    <td>3.2.3 Procesul disciplinar</td>
+                                    <td>Trebuie să existe un proces disciplinar formal şi comunicat împotriva angajaţilor care produc o încălcare a regulilor de securitate a informaţiei.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            <!-- END3.2-->
+                           <!-- 3.3-->
+                               <p class="font-bold ">3.3 Încetarea şi schimbarea contractului de munca</p>
+                               <p><em>Obiectiv: Să protejeze interesele organizaţiei în timpul procesului de schimbare sau de terminare a contractului de muncă.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>3.3.1 Terminarea sau schimbarea responsabilităţilor din contractul de muncă</td>
+                                    <td>Responsabilităţile şi sarcinile referitoare la securitatea informaţiei care rămân în vigoare după terminarea sau schimbarea contractului de muncă trebuie să fie definite, comunicate angajatului sau contractantului şi puse în aplicare.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            </div>
+                            <!-- END3.3-->
+                        </div> <!--end colappse in -->
+                    </div>
+                  <!-- End 3 Securitatea resurselor umane. -->
+
+                   <!-- 4. Managementul resurselor -->
+                    <div class="portlet ">
+                        <div class="portlet-heading bg-custom bg-2">
+                            <h3 class="portlet-title ">
+                                4. Managementul resurselor
+                            </h3>
+                            <div class="portlet-widgets">
+                               <a data-toggle="collapse" data-parent="#accordion1" href="#bg-4"><i class="ion-minus-round"></i></a>
+                              
+                            </div>
+                            <div class="clearfix"></div>
+                         </div>
+                        <div id="bg-4" class="panel-collapse collapse in">
+                            <div class="portlet-body bg-muted">
+                               <p class="font-bold ">4.1 Responsabilitatea pentru resurse</p>
+                               <p><em>Obiectiv: Să identifice resursele organizaţionale şi să definească responsabilităţi de protecţie corespunzătoare.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>4.1.1 Inventarul resurselor</td>
+                                    <td>Informaţiile, alte resurse asociate informaţiilor şi mijloacele pentru prelucrarea informaţiei trebuie să fie identificate şi trebuie întocmit şi menţinut un inventar al acestor resurse.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                    <tr>
+                                    <td>4.1.2 Proprietatea asupra resurselor</td>
+                                    <td>Resursele menţinute în inventar trebuie să aibă proprietar.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>4.1.3 Utilizarea în mod acceptabil a resurselor</td>
+                                    <td>Regulile pentru utilizarea în mod acceptabil a informaţiei şi resurselor asociate sistemelor de prelucrare a informaţiei trebuie să fie identificate, documentate şi implementate.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                </tr>
+                                  <tr>
+                                    <td>4.1.4 Restituirea resurselor</td>
+                                    <td>Toţi angajaţii şi utilizatorii de terţă parte trebuie să restituie toate resursele organizaţionale aflate în posesia lor, la terminarea contractului de muncă, a contractului sau a acordului.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            
+                            <!-- 4.2-->
+                               <p class="font-bold ">4.2 Clasificarea informaţiei</p>
+                               <p><em>Obiectiv: Să asigure faptul ca informaţia beneficiază de un nivel de protecţie în concordanţă cu importanţa ei pentru organizaţie.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>4.2.1 Clasificarea informaţiei</td>
+                                    <td>Informaţiile trebuie să fie clasificate în funcţie de cerinţele legale, valoare, nivel critic şi susceptibilitatea de a fi dezvăluite neautorizat sau de a fi modificate.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                    <tr>
+                                    <td>4.2.2 Etichetarea informaţiei</td>
+                                    <td>Un set corespunzător de proceduri pentru etichetarea informaţiei trebuie să fie dezvoltat şi implementat, în conformitate cu schema de clasificare adoptată de către organizaţie.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                     <tr>
+                                    <td>4.2.3 Manipularea resurselor</td>
+                                    <td>Proceduri pentru manipularea resurselor trebuie să fie dezvoltate şi implementate, în conformitate cu schema de clasificare adoptată de către organizaţie.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            <!-- END4.2-->
+                           <!-- 4.3-->
+                               <p class="font-bold ">4.3 Manipularea suporturilor</p>
+                               <p><em>Obiectiv: Să prevină dezvăluirea neautorizată, modificarea, eliminarea sau distrugerea informaţiilor stocate pe suporturi.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>4.3.1 Managementul suporturilor amovibile</td>
+                                    <td>Trebuie implementate proceduri pentru managementul suporturilor amovibile, în conformitate cu schema de clasificare adoptată de către organizaţie.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>4.3.2 Eliminarea suporturilor</td>
+                                    <td>Suporturile trebuie eliminate în mod sigur, atunci când nu mai sunt utilizate, utilizând proceduri formale.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                </tr>
+                                 <tr>
+                                    <td>4.3.3 Transferul suporturilor fizice</td>
+                                    <td>Suporturile care conţin informaţii trebuie protejate în timpul transportului împotriva accesului neautorizat, utilizării greşite sau coruperii.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            </div>
+                            <!-- END 4.3-->
+                        </div> <!--end colappse in -->
+                    </div>
+                  <!-- End 4. Managementul resurselor -->
+
+                  <!-- 5. Controlul accesului -->
+                    <div class="portlet ">
+                        <div class="portlet-heading bg-custom bg-2">
+                            <h3 class="portlet-title ">
+                                5. Controlul accesului
+                            </h3>
+                            <div class="portlet-widgets">
+                               <a data-toggle="collapse" data-parent="#accordion1" href="#bg-5"><i class="ion-minus-round"></i></a>
+                              
+                            </div>
+                            <div class="clearfix"></div>
+                         </div>
+                        <div id="bg-5" class="panel-collapse collapse in">
+                            <div class="portlet-body bg-muted">
+                               <p class="font-bold ">5.1 Cerinţe de afaceri pentru controlul accesului</p>
+                               <p><em>Obiectiv: Să limiteze accesul la informaţii şi la mijloacele de prelucrare a informaţiilor.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>5.1.1 Politica de control al accesului</td>
+                                    <td>Trebuie stabilită, documentată şi revizuită o politică de control al accesului, pe baza cerinţelor de afaceri şi de securitate a informaţiilor.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                    <tr>
+                                    <td>5.1.2 Acces la reţele şi servicii de reţea</td>
+                                    <td>Utilizatorilor trebuie să li se furnizeze doar accesul la reţea şi la serviciile de reţea pentru care au fost autorizaţi în mod specific să le utilizeze.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            
+                            <!-- 5.2-->
+                               <p class="font-bold ">5.2 Managementul accesului utilizatorului</p>
+                               <p><em>Obiectiv: Să asigure accesul autorizat al utilizatorului şi să prevină accesul neautorizat la sisteme şi servicii.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>5.2.1 Înregistrarea şi anularea înregistrării utilizatorului</td>
+                                    <td>Trebuie implementat un proces formal de înregistrare şi anulare a înregistrării utilizatorului, pentru a permite atribuirea de drepturi de acces.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                    <tr>
+                                    <td>5.2.2 Furnizarea accesului utilizatorului</td>
+                                    <td>Trebuie implementat un proces formal de furnizare a accesului utilizatorului, pentru atribuirea şi revocarea drepturilor de acces, pentru toate tipurile de utilizatori şi pentru toate sistemele şi serviciile.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>5.2.3 Managementul drepturilor de acces privilegiat</td>
+                                    <td>Atribuirea şi utilizarea drepturilor de acces privilegiat trebuie restricţionate şi controlate.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>5.2.4 Managementul informaţiei secrete de autentificare a utilizatorului</td>
+                                    <td>Atribuirea informaţiei secrete de autentificare trebuie controlată printr-un proces formal de management.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>5.2.5 Revizuirea drepturilor de acces ale utilizatorului</td>
+                                    <td>Proprietarii resurselor trebuie să revizuiască drepturile de acces ale utilizatorilor la intervale regulate.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>  
+                                  <tr>
+                                    <td>5.2.6 Retragerea sau adaptarea drepturilor de acces</td>
+                                    <td>Drepturile de acces ale tuturor angajaţilor şi ale utilizatorilor de terţă parte la informaţie şi la mijloacele de prelucrare a informaţiei trebuie retrase după terminarea contractului de muncă, a contractului sau acordului, sau adaptate în funcţie de schimbare.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>                                  </tbody>
+                               </table>
+                               </div>
+                            <!-- END5.2-->
+                           <!-- 5.3-->
+                               <p class="font-bold ">5.3 Responsabilităţile utilizatorului</p>
+                               <p><em>Obiectiv: Să responsabilizeze utilizatorii în vederea protejării informaţiei lor de autentificare</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>5.3.1 Utilizarea informaţiei secrete de autentificare</td>
+                                    <td>Utilizatorilor trebuie să li se solicite să urmeze practicile organizaţiei în ceea ce priveşte utilizarea informaţiei secrete de autentificare.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                           <!-- END 5.3-->
+                           <!-- 5.4-->
+                               <p class="font-bold ">5.4 Controlul accesului la sisteme şi aplicaţii</p>
+                               <p><em>Obiectiv: Să prevină accesul neautorizat la sisteme şi aplicaţii.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>5.4.1 Restricţionarea accesului la informaţie</td>
+                                    <td>Accesul la informaţie şi la funcţiile sistemului de aplicaţii trebuie să fie restricţionat în conformitate cu prevederile politicii de control al accesului.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>5.4.2 Proceduri securizate de conectare</td>
+                                    <td>Acolo unde este cerut de politica de control al accesului, accesul la sisteme şi aplicaţii trebuie să fie controlat de o procedură securizată de conectare.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                   <tr>
+                                    <td>5.4.3 Sistem de management al parolelor</td>
+                                    <td>Sistemele de management al parolelor trebuie să fie interactive şi să asigure parole de calitate.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>                                 </tr>
+                                  <tr>
+                                    <td>5.4.4 Utilizarea programelor utilitare privilegiate</td>
+                                    <td>Utilizarea programelor utilitare care pot fi capabile să evite mijloacele de control ale sistemelor şi aplicaţiilor trebuie să fie restricţionată şi controlată îndeaproape.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>5.4.5 Controlul accesului la codul sursă al programelor</td>
+                                    <td>Accesul la codul sursă al programelor trebuie să fie restricţionat.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>                                                                  
+                                </tbody>
+                               </table>
+                               </div>
+                            </div>
+                            <!-- END 5.4-->                          
+                        </div> <!--end colappse in -->
+                    </div>
+                  <!-- End 5. Controlul accesului -->
+
+                  <!-- 6. Criptografie-->
+                    <div class="portlet ">
+                        <div class="portlet-heading bg-custom bg-2">
+                            <h3 class="portlet-title ">
+                                6. Criptografie
+                            </h3>
+                            <div class="portlet-widgets">
+                               <a data-toggle="collapse" data-parent="#accordion1" href="#bg-6"><i class="ion-minus-round"></i></a>
+                              
+                            </div>
+                            <div class="clearfix"></div>
+                         </div>
+                        <div id="bg-6" class="panel-collapse collapse in">
+                            <div class="portlet-body bg-muted">
+                               <p class="font-bold ">6.1 Mijloace de control referitoare la criptografie</p>
+                               <p><em>Obiectiv: Să asigure utilizarea corespunzătoare şi eficientă a criptografiei în vederea protejării confidenţialităţii, autenticităţii şi/sau integrităţii informaţiei.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>6.1.1 Politica de utilizare a mijloacelor de control referitoare la criptografie</td>
+                                    <td>Trebuie dezvoltată şi implementată o politică în ceea ce priveşte utilizarea mijloacelor de control referitoare la criptografie pentru protecţia informaţiei</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                    <tr>
+                                    <td>6.1.2 Managementul cheilor criptografice</td>
+                                    <td>Trebuie dezvoltată şi implementată o politică în ceea ce priveşte utilizarea, protecţia şi durata de viaţă a cheilor criptografice, de-a lungul întregului lor ciclu de viaţă.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                        </div>
+                                                   
+                        </div> <!--end colappse in -->
+                    </div>
+                  <!-- End 6. Criptografie -->   
+
+                   <!-- 7. Securitatea fizică şi a mediului de lucru -->
+                    <div class="portlet ">
+                        <div class="portlet-heading bg-custom bg-2">
+                            <h3 class="portlet-title ">
+                                7. Securitatea fizică şi a mediului de lucru
+                            </h3>
+                            <div class="portlet-widgets">
+                               <a data-toggle="collapse" data-parent="#accordion1" href="#bg-7"><i class="ion-minus-round"></i></a>
+                              
+                            </div>
+                            <div class="clearfix"></div>
+                         </div>
+                        <div id="bg-7" class="panel-collapse collapse in">
+                            <div class="portlet-body bg-muted">
+                               <p class="font-bold ">7.1 Zone de securitate</p>
+                               <p><em>Obiectiv: Să prevină accesul fizic neautorizat, distrugerile şi interferarea cu informaţiile şi mijloacele deprelucrare a informaţiei organizaţiei.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>7.1.1 Perimetrul fizic de securitater</td>
+                                    <td>Trebuie definite şi utilizate perimetre de securitate pentru a proteja zonele care conţin fie informaţii senzitive sau critice, fie mijloace pentru prelucrarea informaţiei</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                    <tr>
+                                    <td>7.1.2 Controlul accesului fizic</td>
+                                    <td>Zonele de securitate trebuie protejate prin mijloace de control al intrării adecvate, pentru a se asigura că accesul este permis doar personalului autorizat.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>7.1.3 Securizarea birourilor, încăperilor şi facilităţilor</td>
+                                    <td>Trebuie elaborate şi aplicate măsuri de securitate fizică pentru birouri, încăperi şi facilităţi.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                </tr>
+                                  <tr>
+                                    <td>7.1.4 Protejarea împotriva ameninţărilor externe şi de mediu</td>
+                                    <td>Trebuie elaborate şi aplicate măsuri de protecţie fizică împotriva dezastrelor naturale, atacurilor maliţioase sau accidentelor.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>7.1.5 Desfăşurarea activităţii în zone de securitate</td>
+                                    <td>Trebuie elaborate şi aplicate proceduri pentru desfăşurarea activităţii în zone de securitate.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>7.1.6 Puncte de livrare şi încărcare</td>
+                                    <td>Punctele de acces, precum punctele de livrare şi încărcare sau alte puncte pe unde persoanele care nu sunt autorizate pot intra în interior, trebuie controlate şi, dacă este posibil, izolate de sistemele de prelucrare a informaţiei pentru a se evita accesul neautorizat.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>                                 
+                                </tbody>
+                               </table>
+                               </div>
+                            
+                            <!-- 7.2-->
+                               <p class="font-bold ">7.2 Echipamente</p>
+                               <p><em>Obiectiv: Să prevină pierderea, avarierea, furtul sau compromiterea resurselor şi întreruperea activităţilor din cadrul organizaţiei  </em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>7.2.1 Amplasarea şi protejarea echipamentelor</td>
+                                    <td>Echipamentele trebuie să fie amplasate şi protejate astfel încât să se reducă riscurile faţă de ameninţările şi pericolele de mediu şi faţă de posibilitatea de acces neautorizat.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                    <tr>
+                                    <td>7.2.2 Utilităţile suport</td>
+                                    <td>Echipamentele trebuie să fie protejate împotriva penelor de curent sau a altor întreruperi cauzate de probleme ale utilităţilor suport.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>7.2.3 Securitatea cablării</td>
+                                    <td>Cablurile de alimentare cu energie electrică şi de telecomunicaţii, purtătoare de date sau servicii de suport pentru informaţie, trebuie protejate faţă de interceptări, interferenţe sau avarii.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                 <tr>
+                                    <td>7.2.4 Întreţinerea echipamentelor</td>
+                                    <td>Echipamentele trebuie să fie corect întreţinute pentru a se asigura disponibilitatea continuă şi integritatea acestora.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>7.2.5 Scoaterea resurselor</td>
+                                    <td>Echipamentele, informaţiile sau produsele software nu trebuie scoase în afara spaţiului de lucru fără o autorizare prealabilă.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                                                       <tr>
+                                    <td>7.2.6 Securitatea echipamentului şi a resurselor situate în afara locaţiei</td>
+                                    <td>Pentru resursele situate în afara locaţiei trebuie să fie asigurată o securitate corespunzătoare, cu luarea în considerare a riscurile diferite asociate lucrului în afaralocaţiei.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                                                       <tr>
+                                    <td>7.2.7 Eliminarea sau reutilizarea în condiţii de securitate</td>
+                                    <td>Toate părţile din echipament care conţin medii de stocare trebuie verificate pentru a se asigura că orice date importante sau produse software licenţiate au fost înlăturate sau suprascrise într-un mod sigur înainte de eliminare sau reutilizare.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                <tr>
+                                    <td>7.2.8 Echipamente nesupravegheate de utilizator</td>
+                                    <td>Utilizatorii trebuie să se asigure că echipamentele nesupravegheate au o protecţie corespunzătoare.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                <tr>
+                                    <td>7.2.9 Politică referitoare la biroul şi ecranul curat</td>
+                                    <td>Cablurile de alimentare cu energie electrică şi de telecomunicaţii, purtătoare de date sau servicii de suport pentru informaţie, trebuie protejate faţă de interceptări, interferenţe sau avarii.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            <!-- END7.2-->
+                          
+                            </div>
+                        </div> <!--end colappse in -->
+                    </div>
+                  <!-- End 7. Securitatea fizică şi a mediului de lucru -->
+
+                  <!-- 8. Securitatea operaţiunilor-->
+                    <div class="portlet ">
+                        <div class="portlet-heading bg-custom bg-2">
+                            <h3 class="portlet-title ">
+                               8. Securitatea operaţiunilor
+                            </h3>
+                            <div class="portlet-widgets">
+                               <a data-toggle="collapse" data-parent="#accordion1" href="#bg-8"><i class="ion-minus-round"></i></a>
+                              
+                            </div>
+                            <div class="clearfix"></div>
+                         </div>
+                        <div id="bg-8" class="panel-collapse collapse in">
+                            <div class="portlet-body bg-muted">
+                               <p class="font-bold ">8.1 Proceduri operaţionale şi responsabilităţi</p>
+                               <p><em>Obiectiv: Să asigure operarea corectă şi în condiţii de securitate a sistemelor de prelucrare a informaţiei.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>8.1.1 Proceduri de operare documentate</td>
+                                    <td>Procedurile de operare trebuie să fie documentate, păstrate şi puse la dispoziţia tuturor celor care au nevoie de ele.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>8.1.2 Managementul schimbărilor</td>
+                                    <td>Schimbările privind organizaţia, procesele de afaceri, precum şi mijloacele şi sistemele de prelucrare a informaţiilor, care afectează securitatea informaţiei trebuie să fie controla.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>8.1.3 Managementul capacităţii</td>
+                                    <td>Utilizarea resurselor trebuie supravegheată şi ajustată şi trebuie făcute prognoze ale cerinţelor viitoare de capacitate, pentru a se asigura performanţa necesară a sistemului.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>8.1.4 Separarea mediilor de dezvoltare, testare şi funcţionare</td>
+                                    <td>Mediile de dezvoltare, testare şi funcţionare trebuie să fie separate pentru a reduce riscurile de acces neautorizat sau de schimbare a mediului de funcţionare..</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            
+                            <!-- 8.2-->
+                               <p class="font-bold ">8.2 Protecţie împotriva malware-ului</p>
+                               <p><em>Obiectiv: Să asigure că informaţia şi mijloacele de prelucrare a informaţiei sunt protejate împotriva malwareului.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>8.2.1 Mijloace de control împotriva malware-ului</td>
+                                    <td>Mijloacele de control pentru detecţie, prevenire şi recuperare pentru protecţia împotriva malware-ului trebuie implementate, împreună cu conştientizarea corespunzătoare a utilizatorului.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            <!-- END8.2-->
+                           <!-- 8.3-->
+                               <p class="font-bold ">8.3 Copie de siguranţă</p>
+                               <p><em>Obiectiv: Să protejeze împotriva pierderii datelor.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>8.3.1 Copie de siguranţă a informaţiei</td>
+                                    <td>Copii de siguranţă ale informaţiei, software-ului şi imagini ale sistemului trebuie realizate şi testate în mod regulat, în conformitate cu politica de copii de siguranţă agreată.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                           <!-- END 8.3-->
+                           <!-- 8.4-->
+                               <p class="font-bold ">8.4 Înregistrare şi supraveghere</p>
+                               <p><em>Obiectiv: Înregistrarea evenimentelor şi generarea dovezilor</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>8.4.1 Înregistrarea evenimentelor</td>
+                                    <td>Jurnalele de evenimente care înregistrează activităţile utilizatorului, excepţiile, defectele şi evenimentele de securitate a informaţiei trebuie produse, păstrate şi revizuite în mod regulat.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>8.4.2 Protecţia informaţiilor din jurnale</td>
+                                    <td>Mijloacele de înregistrare şi informaţiile din jurnale trebuie protejate împotriva modificărilor şi accesului neautorizat.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                   <tr>
+                                    <td>8.4.3 Jurnale ale activităţilor administratorului şi operatorului</td>
+                                    <td>Activităţile administratorului de sistem şi ale operatorului de sistem trebuie înregistrate, iar jurnalele trebuie protejate şi revizuite în mod regulat.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>                                 </tr>
+                                  <tr>
+                                    <td>8.4.4 Sincronizarea ceasului</td>
+                                    <td>Ceasurile tuturor sistemelor relevante de prelucrare a informaţiei din cadrul unei organizaţii sau dintr-un domeniu de securitate trebuie să fie sincronizate în raport cu o singură sursă de referinţă temporală.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                           <!-- END 8.4--> 
+                            <!-- 8.5-->
+                               <p class="font-bold ">8.5 Controlul software-ului operaţional</p>
+                               <p><em>Obiectiv: Să asigure integritatea sistemelor operaţionale</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>8.5.1 Instalarea de software pe sistemele operaţionale</td>
+                                    <td>Trebuie implementate proceduri pentru controlul instalării de software pe sistemele operaţionale.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>8.4.2 Protecţia informaţiilor din jurnale</td>
+                                    <td>Mijloacele de înregistrare şi informaţiile din jurnale trebuie protejate împotriva modificărilor şi accesului neautorizat.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                </tbody>
+                               </table>
+                               </div>
+                            <!-- END 8.5--> 
+                            <!-- 8.6-->
+                               <p class="font-bold ">8.6 Managementul vulnerabilităţilor tehnice</p>
+                               <p><em>Obiectiv: Prevenirea exploatării vulnerabilităţilor tehnice</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>8.6.1 Managementul vulnerabilităţilor tehnice</td>
+                                    <td>Trebuie obţinute în timp util informaţii despre vulnerabilităţile sistemelor informaţionale utilizate, trebuie evaluată expunerea organizaţiei la asemenea vulnerabilităţi şi trebuie luate măsuri adecvate pentru tratarea riscului asociat.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>8.6.2 Restricţii la instalarea de software</td>
+                                    <td>Trebuie stabilite şi implementate reguli referitoare la instalarea software-ului de către utilizatori.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                </tbody>
+                               </table>
+                               </div>
+                            <!-- END 8.6-->    
+                             <!-- 8.7-->
+                               <p class="font-bold ">8.7 Consideraţii privind auditul sistemelor informaţionale</p>
+                               <p><em>Obiectiv: Să minimizeze impactul activităţilor de audit asupra sistemelor operaţionale.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>8.7.1 Mijloacele de control al auditului sistemelor informaţionale</td>
+                                    <td>Cerinţele şi activităţile de audit care implică verificări asupra sistemelor operaţionale trebuie să fie planificate cu grijă şi trebuie convenite astfel încât să se minimizeze riscul întreruperii proceselor de afaceri.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            <!-- END 8.7-->                                                                                                       
+                        </div> <!--end colappse in -->
+                    </div>
+                  </div>
+                  <!-- End 8. Securitatea operaţiunilor -->
+
+                  <!-- 9.  Securitatea comunicaţiilor-->
+                    <div class="portlet ">
+                        <div class="portlet-heading bg-custom bg-2">
+                            <h3 class="portlet-title ">
+                               9. Securitatea comunicaţiilor
+                            </h3>
+                            <div class="portlet-widgets">
+                               <a data-toggle="collapse" data-parent="#accordion1" href="#bg-9"><i class="ion-minus-round"></i></a>
+                              
+                            </div>
+                            <div class="clearfix"></div>
+                         </div>
+                        <div id="bg-9" class="panel-collapse collapse in">
+                            <div class="portlet-body bg-muted">
+                               <p class="font-bold ">9.1 Managementul securităţii reţelei</p>
+                               <p><em>Obiectiv: Să asigure protecţia informaţiilor în reţele şi în mijloacele de prelucrare a informaţiei care le susţin.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>9.1.1 Mijloace de control al reţelelor</td>
+                                    <td>Reţelele trebuie administrate şi controlate în mod adecvat pentru protecţia informaţiei în sisteme şi aplicaţii</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>9.1.2 Securitatea serviciilor de reţea</td>
+                                    <td>Cerinţele privind mecanismele de securitate, nivelul serviciilor şi management pentru toate serviciile de reţea trebuie identificate şi incluse în acorduri de servicii de reţea, indiferent dacă aceste servicii sunt oferite intern sau sunt externalizate.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>9.1.3 Separarea în reţele</td>
+                                    <td>Grupurile de servicii de informaţii, utilizatori şi sisteme informaţionale trebuie să fie separate în reţele.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            
+                            <!-- 9.2-->
+                               <p class="font-bold ">9.2 Transferul informaţiei</p>
+                               <p><em>Obiectiv: Să menţină securitatea informaţiei transferată în cadrul organizaţiei sau cu orice entitate externă.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>9.2.1 Politici şi proceduri pentru transferul informaţiei</td>
+                                    <td>Pentru protejarea transferului informaţiei folosind orice tip de dispozitiv de comunicare trebuie implementate politici, proceduri şi mijloace de control formalizate.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>9.2.2 Acorduri de transfer al informaţiei</td>
+                                    <td>Acordurile trebuie să abordeze transferul securizat al informaţiei de afaceri între organizaţie şi părţi externe.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                   <tr>
+                                    <td>9.2.3 Mesagerie electronică</td>
+                                    <td>Informaţia implicată în mesageria electronică trebuie protejată în mod corespunzător.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>9.2.4 Acorduri de confidenţialitate sau de nedezvăluire</td>
+                                    <td>Cerinţele pentru acorduri de confidenţialitate sau nedezvăluire care să reflecte nevoile organizaţiei pentru protecţia informaţiei trebuie identificate, revizuite şi documentate în mod regulat.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            <!-- END9.2-->
+                                                                                                                                 
+                        </div> <!--end colappse in -->
+                    </div>
+                  </div>
+                  <!-- End 9.  Securitatea comunicaţiilor -->    
+
+                   <!-- 10. Achiziţia, dezvoltarea şi mentenanţa sistemelor -->
+                    <div class="portlet ">
+                        <div class="portlet-heading bg-custom bg-2">
+                            <h3 class="portlet-title ">
+                                10. Achiziţia, dezvoltarea şi mentenanţa sistemelor
+                            </h3>
+                            <div class="portlet-widgets">
+                               <a data-toggle="collapse" data-parent="#accordion1" href="#bg-10"><i class="ion-minus-round"></i></a>
+                              
+                            </div>
+                            <div class="clearfix"></div>
+                         </div>
+                        <div id="bg-10" class="panel-collapse collapse in">
+                            <div class="portlet-body bg-muted">
+                               <p class="font-bold ">10.1 Cerinţe de securitate pentru sistemele informaţionale</p>
+                               <p><em>Obiectiv: Să asigure faptul ca securitatea este parte integrantă a sistemelor informaţionale pe întregul ciclu de viaţă. Aceasta include, de asemenea, cerinţe pentru sisteme informaţionale care furnizează servicii prin reţele publice.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>10.1.1 Analiza şi specificarea cerinţelor de securitate a informaţiei</td>
+                                    <td>Cerinţele referitoare la securitatea informaţiei trebuie incluse în cerinţele pentru sisteme informaţionale noi sau îmbunătăţiri ale sistemelor informaţionale existente.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                    <tr>
+                                    <td>10.1.2 Securizarea serviciilor aplicaţiilor în reţele publice</td>
+                                    <td>Informaţia implicată în serviciile aplicaţiilor, transmisă prin reţele publice, trebuie să fie protejată de activităţi frauduloase, dispute asupra contractelor, precum şi de dezvăluirea şi modificarea frauduloasă.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>10.1.3 Protejarea tranzacţiilor serviciilor aplicaţiilor</td>
+                                    <td>Informaţia implicată în tranzacţiile serviciilor aplicaţiilor trebuie să fie protejată împotriva transmiterii incomplete, rutării greşite, alterării neautorizate a mesajelor, dezvăluirii neautorizate, duplicării neautorizate sau reluării mesajelor.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            
+                            <!-- 10.2-->
+                               <p class="font-bold ">10.2 Securitatea în procesele de dezvoltare şi de suport</p>
+                               <p><em>Obiectiv: Să asigure faptul că securitatea informaţiei este implementată în cadrul ciclului de viaţă de dezvoltare a sistemelor informaţionale.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>10.2.1 Politica de dezvoltare securizată</td>
+                                    <td>Trebuie stabilite şi aplicate reguli pentru dezvoltarea softwareului şi sistemelor şi aplicate pentru dezvoltările din cadrul organizaţiei.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                    <tr>
+                                    <td>10.2.2 Proceduri de control al modificării sistemelor</td>
+                                    <td>Modificarea sistemelor în cadrul ciclului de viaţă de dezvoltare trebuie controlată prin utilizarea de proceduri formale pentru controlul schimbării.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>10.2.3 Revizuirea tehnică a aplicaţiilor după modificarea platformelor operaţionale</td>
+                                    <td>Atunci când apar modificări asupra platformelor operaţionale, aplicaţiile critice de afaceri trebuie revizuite şi încercate pentru a se asigura că nu există un impact advers asupra operaţiunilor sau securităţii organizaţionale.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>10.2.4 Restricţii privind modificările asupra pachetelor software</td>
+                                    <td>Modificările asupra pachetelor software trebuie descurajate, limitate la modificările necesare, iar toate schimbările trebuie controlate în mod strict.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                    <tr>
+                                    <td>10.2.5 Principiile ingineriei sistemelor securizate</td>
+                                    <td>Principiile ingineriei sistemelor securizate trebuie stabilite, documentate, întreţinute şi aplicate tuturor eforturilor de implementare a sistemelor informaţionale.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>10.2.6 Mediul de dezvoltare securizat</td>
+                                    <td>Organizaţiile trebuie să stabilească şi să protejeze în mod corespunzător medii de dezvoltare securizate pentru eforturile de dezvoltare şi integrare a sistemelor care acoperă întregul ciclu de viaţă a dezvoltării sistemelor.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>10.2.7 Dezvoltare externalizată</td>
+                                    <td>Organizaţia trebuie să supervizeze şi să supravegheze activitatea externalizată de dezvoltare a sistemelor.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>10.2.8 Testarea securităţii sistemelor</td>
+                                    <td>Testarea funcţionalităţii de securitate trebuie efectuată în timpul dezvoltării.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>10.2.9 Testarea sistemelor în vederea recepţiei</td>
+                                    <td>Programele de testare a sistemelor în vederea recepţiei şi criteriile referitoare la aceasta trebuie stabilite pentru sisteme informaţionale noi, actualizări sau versiuni noi.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            <!-- END 10.2-->
+                           <!-- 10.3-->
+                               <p class="font-bold ">10.3 Date de testare</p>
+                               <p><em>Obiectiv: Să asigure protejarea datelor utilizate pentru testare.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>10.3.1 Protejarea datelor de testare</td>
+                                    <td>Datele de testare trebuie alese cu grijă, protejate şi controlate.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            </div>
+                            <!-- END 10.3-->
+                        </div> <!--end colappse in -->
+                    </div>
+                  <!-- End 10. Achiziţia, dezvoltarea şi mentenanţa sistemelor -->                              
+
+                  <!-- 11. Relaţii cu furnizorii-->
+                    <div class="portlet ">
+                        <div class="portlet-heading bg-custom bg-2">
+                            <h3 class="portlet-title ">
+                               11. Relaţii cu furnizorii
+                            </h3>
+                            <div class="portlet-widgets">
+                               <a data-toggle="collapse" data-parent="#accordion1" href="#bg-11"><i class="ion-minus-round"></i></a>
+                              
+                            </div>
+                            <div class="clearfix"></div>
+                         </div>
+                        <div id="bg-11" class="panel-collapse collapse in">
+                            <div class="portlet-body bg-muted">
+                               <p class="font-bold ">11.1 Securitatea informaţiei în relaţiile cu furnizorii</p>
+                               <p><em>Obiectiv: Să asigure protejarea resurselor organizaţiei care sunt accesate de furnizori.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>11.1.1 Politica de securitate a informaţiei pentru relaţiile cu furnizorii</td>
+                                    <td>Cerinţele de securitate a informaţiei pentru reducerea riscurilor asociate accesului furnizorilor la resursele organizaţiei trebuie agreate cu furnizorii şi documentate.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>11.1.2 Abordarea securităţii în acordurile cu furnizorii</td>
+                                    <td>Toate cerinţele pentru securitatea informaţiei relevante trebuie stabilite şi agreate cu fiecare furnizor care poate accesa, prelucra, stoca, comunica sau furniza componente pentru infrastructura TI a informaţiei organizaţiei.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>11.1.3 Lanţul de aprovizionare al tehnologiei informaţiei şi comunicaţiilor</td>
+                                    <td>Acordurile cu furnizorii trebuie să includă cerinţe pentru abordarea riscurilor de securitate a informaţiei asociate cu lanţul de aprovizionare cu servicii şi produse de tehnologia informaţiei şi comunicaţiilor.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            
+                            <!-- 11.2-->
+                               <p class="font-bold ">11.2 Managementul livrării serviciilor furnizorilor</p>
+                               <p><em>Obiectiv: Să menţină un nivel al securităţii informaţiei şi livrării serviciilor agreat, aliniat cu acordurile cu furnizorii.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>11.2.1 Supravegherea şi revizuirea serviciilor furnizorilor</td>
+                                    <td>Organizaţiile trebuie să supravegheze, să revizuiască şi să auditeze în mod regulat livrarea serviciilor furnizorilor.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>11.2.2 Gestionarea schimbărilor serviciilor furnizorilor</td>
+                                    <td>Schimbările în livrarea serviciilor de către furnizori, inclusiv întreţinerea şi îmbunătăţirea politicilor, procedurilor şi mijloacelor de control existente de securitate a informaţiilor, trebuie gestionate luând în considerare nivelul critic al informaţiei, sistemelor şi proceselor de afaceri implicate şi reevaluarea riscurilor.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                 </tbody>
+                               </table>
+                               </div>
+                            <!-- END11.2-->
+                                                                                                                                 
+                        </div> <!--end colappse in -->
+                    </div>
+                  </div>
+                  <!-- End 11. Relaţii cu furnizorii --> 
+                  <!-- 12. Managementul incidentelor de securitate a informaţiei  -->
+                    <div class="portlet ">
+                        <div class="portlet-heading bg-custom ">
+                            <h3 class="portlet-title ">
+                                12. Managementul incidentelor de securitate a informaţiei
+                            </h3>
+                            <div class="portlet-widgets">
+                               <a data-toggle="collapse" data-parent="#accordion1" href="#bg-12"><i class="ion-minus-round"></i></a>
+                              
+                            </div>
+                            <div class="clearfix"></div>
+                         </div>
+                        <div id="bg-12" class="panel-collapse collapse in">
+                            <div class="portlet-body bg-muted">
+                               <p class="font-bold ">12.1 Managementul incidentelor de securitate a informaţiei şi al îmbunătăţirilor</p>
+                               <p><em>Obiectiv: Să asigure o abordare consistentă şi eficientă a managementului incidentelor de securitate a informaţiei, inclusiv comunicarea evenimentelor de securitate şi a slăbiciunilor.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>12.1.1 Responsabilităţi şi proceduri</td>
+                                    <td>Responsabilităţile şi procedurile de management trebuie stabilite pentru a asigura un răspuns rapid, eficient şi sistematic la incidentele de securitate a informaţiei.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                    <tr>
+                                    <td>12.1.2 Raportarea evenimentelor de securitate a informaţiei.</td>
+                                    <td>Evenimentele de securitate a informaţiei trebuie raportate prin canale de management corespunzătoare, cât mai curând posibil.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>12.1.3 Reportarea slăbiciunilor de securitate a informaţiei</td>
+                                    <td>Angajaţilor şi contractanţilor care utilizează sistemele şi serviciile informaţionale ale organizaţiei trebuie să li se ceară să noteze şi să raporteze orice slăbiciune de securitate a informaţiei observată sau suspectată în cadrul sistemelor sau a serviciilor.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>12.1.4 Evaluarea şi decizia asupra evenimentelor de securitate a informaţiei</td>
+                                    <td>Evenimentele de securitate a informaţiei trebuie evaluate şi trebuie să se ia decizia dacă ele trebuie să fie clasificate drept incidente de securitate a informaţiei.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>12.1.5 Răspunsul la incidente de securitate a informaţiei</td>
+                                    <td>Incidentelor de securitate a informaţiei trebuie să li se răspundă în conformitate cu procedurile documentate.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>12.1.6 Învăţarea din incidentele de securitate a informaţiei</td>
+                                    <td>Cunoştinţele dobândite din analizarea şi rezolvarea incidentelor de securitate a informaţiei trebuie utilizate pentru a reduce plauzibilitatea sau impactul incidentelor viitoare.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                <tr>
+                                    <td>12.1.7 Colectarea probelor</td>
+                                    <td>Organizaţia trebuie să definească şi să aplice proceduri pentru identificarea, colectarea, achiziţia şi păstrarea informaţiilor care pot servi drept probe.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End 12. Managementul incidentelor de securitate a informaţiei  -->   
+                  <!-- 13. Aspecte ale securităţii informaţiei pentru managementul continuităţii afacerii-->
+                    <div class="portlet ">
+                        <div class="portlet-heading bg-custom bg-2">
+                            <h3 class="portlet-title ">
+                               13. Aspecte ale securităţii informaţiei pentru managementul continuităţii afacerii
+                            </h3>
+                            <div class="portlet-widgets">
+                               <a data-toggle="collapse" data-parent="#accordion1" href="#bg-13"><i class="ion-minus-round"></i></a>
+                              
+                            </div>
+                            <div class="clearfix"></div>
+                         </div>
+                        <div id="bg-13" class="panel-collapse collapse in">
+                            <div class="portlet-body bg-muted">
+                               <p class="font-bold ">13.1 Continuitatea securităţii informaţiei</p>
+                               <p><em>Obiectiv: Continuitatea securităţii informaţiei trebuie inclusă în sistemele organizaţiei pentru managementul.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>13.1.1 Planificarea continuităţii securităţii informaţiei</td>
+                                    <td>Organizaţia trebuie să determine cerinţele sale referitoare la securitatea informaţiei şi la continuitatea managementului securităţii informaţiei în situaţii potrivnice, de exemplu, în timpul unei crize sau a unui dezastru.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>13.1.2 Implementarea continuităţii securităţii informaţiei</td>
+                                    <td>Organizaţia trebuie să stabilească, să documenteze, să implementeze şi să întreţină procese, proceduri şi mijloace de control pentru asigurarea nivelului cerut de continuitate pentru securitatea informaţiei în timpul situaţiilor potrivnice.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>13.1.3 Verificarea, revizuirea şi evaluarea continuităţii securităţii informaţiei</td>
+                                    <td>Organizaţia trebuie să verifice la intervale regulate mijloacele de control pentru continuitatea securităţii informaţiei stabilite şi implementate, pentru a se asigura că ele sunt valide şi eficiente în timpul situaţiilor potrivnice.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                </tbody>
+                               </table>
+                               </div>
+                            
+                            <!-- 13.2-->
+                               <p class="font-bold ">13.2 Redundanţe</p>
+                               <p><em>Obiectiv: Să asigure disponibilitatea mijloacelor pentru prelucrarea informaţiilor.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>13.2.1 Disponibilitatea mijloacelor pentru prelucrarea informaţiilor</td>
+                                    <td>Mijloacele pentru prelucrarea informaţiei trebuie implementate cu o redundanţă suficientă pentru a satisface cerinţele de disponibilitate.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                 </tbody>
+                               </table>
+                               </div>
+                            <!-- END13.2-->
+                                                                                                                                 
+                        </div> <!--end colappse in -->
+                    </div>
+                  </div>
+                  <!-- End 13. Aspecte ale securităţii informaţiei pentru managementul continuităţii afacerii -->
+                  <!-- 14. Conformitate-->
+                    <div class="portlet ">
+                        <div class="portlet-heading bg-custom bg-2">
+                            <h3 class="portlet-title ">
+                               14. Conformitate
+                            </h3>
+                            <div class="portlet-widgets">
+                               <a data-toggle="collapse" data-parent="#accordion1" href="#bg-14"><i class="ion-minus-round"></i></a>
+                              
+                            </div>
+                            <div class="clearfix"></div>
+                         </div>
+                        <div id="bg-14" class="panel-collapse collapse in">
+                            <div class="portlet-body bg-muted">
+                               <p class="font-bold ">14.1 Conformitatea cu cerinţele legale şi contractuale</p>
+                               <p><em>Obiectiv: Evitarea încălcării obligaţiilor legale, statutare, de reglementare şi contractuale referitoare la securitatea informaţiei şi a oricăror cerinţe de securitate.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>14.1.1 Identificarea legislaţiei aplicabile şi a cerinţelor contractuale</td>
+                                    <td>Toate cerinţele relevante statutare, de reglementare, contractuale precum şi abordarea organizaţiei în vederea îndeplinirii acestor cerinţe trebuie să fie identificate, documentate şi actualizate pentru fiecare sistem informaţional şi pentru organizaţie.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>14.1.2 Drepturile de proprietate intelectuală</td>
+                                    <td>Trebuie implementate proceduri corespunzătoare pentru a asigura conformitatea cu cerinţele legislative, de reglementare şi contractuale cu privire la drepturile de proprietate intelectuală şi la utilizarea produselor software proprietare.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                 <td>14.1.3 Protejarea înregistrărilor</td>
+                                    <td>Înregistrările trebuie protejate împotriva pierderii, distrugerii, falsificării, accesului neautorizat şi a transmiterii neautorizate a acestora în conformitate cu cerinţele legislative, de reglementare, contractuale şi de afaceri.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                <tr>
+                                 <td>14.1.4 Protecţia datelor cu caracter personal şi confidenţialitatea informaţiilor personale</td>
+                                    <td>Protecţia datelor cu caracter personal şi confidenţialitatea acestora trebuie să fie asigurată aşa cum este specificat în legislaţie şi reglementări, acolo unde este cazul.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr> 
+                                <tr>
+                                 <td>14.1.5 Reglementări privind măsurile criptografice</td>
+                                    <td>Mijloacele de control criptografice trebuie folosite în conformitate cu toate acordurile, legile şi reglementările aplicabile.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr> 
+
+                                </tbody>
+                               </table>
+                               </div>
+                            
+                            <!-- 14.2-->
+                               <p class="font-bold ">14.2 Revizuirea securităţii informaţiei</p>
+                               <p><em>Obiectiv: Să asigure că securitatea informaţiei este implementată şi aplicată în conformitate cu politicile şi procedurile organizaţionale.</em></p>
+                               <div class="table-responsive">
+                               <table class="table table-striped table-bordered m-0">
+                                 <thead>
+                                  <tr>
+                                    <th style="width:20%; text-align: center">Denumire</th>
+                                    <th style="width:30%; text-align: center" >Masură de control</th>  
+                                    <th style="width:10%; text-align: center">Nivel Maturitate</th>
+                                    <th style="width:20%; text-align: center">Descrierea  implementării controlului</th>
+                                    <th style="width:20%; text-align: center">Responsabil de control</th> 
+                                  </tr>      
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>14.2.1 Revizuirea independentă a securităţii informaţiei</td>
+                                    <td>Abordarea de către organizaţie a gestionării securităţii informaţiei şi implementarea acesteia (adică obiective de control, mijloace de control, politici, procese şi proceduri pentru securitatea informaţiei) trebuie revizuite în mod independent la intervale planificate sau când survin schimbări semnificative.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>14.2.2 Conformitatea cu politicile şi standardele de securitate</td>
+                                    <td>Abordarea de către organizaţie a gestionării securităţii informaţiei şi implementarea acesteia (adică obiective de control, mijloace de control, politici, procese şi proceduri pentru securitatea informaţiei) trebuie revizuite în mod independent la intervale planificate sau când survin schimbări semnificative.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                 <tr>
+                                    <td>14.2.3 Revizuirea conformităţii tehnice</td>
+                                    <td>Sistemele informaţionale trebuie revizuite în mod regulat pentru conformitatea cu politicile şi standardele de securitateale organizaţiei.</td>
+                                    <td><a href="#" id="cobitselect" data-type="select" data-pk="1" data-value="" data-title="Alege nivel"></a></td>
+                                    <td><a href="#" id="implementation" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce descrierea"</a></td>
+                                    <td><a href="#" id="responsible" data-type="textarea" data-pk="1" data-placeholder="Textul..." data-title="Introduce responsabili"</a></td>
+                                  </tr>
+                                 </tbody>
+                               </table>
+                               </div>
+                            <!-- END14.2-->
+                                                                                                                                 
+                        </div> <!--end colappse in -->
+                    </div>
+                  </div>
+                  <!-- End 14. Conformitate -->                                                                         
+                </div>
+              </div>
+            </div>
+            </div>
+                        <!-- end row -->
+
+           </div> <!-- container -->
+                               
+       </div> <!-- content -->
+    
+
+     <footer class="footer text-right">
+                    © 2017. All rights reserved.
+      </footer>
+
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+            
+
+        </div>
+        <!-- END wrapper -->
+
+
+
+        <script>
+            var resizefunc = [];
+        </script>
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+
+        <script src="assets/plugins/morris/morris.min.js"></script>
+        <script src="assets/plugins/raphael/raphael-min.js"></script>
+
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+   
+
+         <!-- XEditable Plugin -->
+        <script src="assets/plugins/moment/moment.js"></script>
+        <script type="text/javascript" src="assets/plugins/x-editable/js/bootstrap-editable.min.js"></script>
+        <script type="text/javascript" src="assets/pages/jquery.xeditable.js"></script>
+
+
+
+
+    </body>
+</html>
